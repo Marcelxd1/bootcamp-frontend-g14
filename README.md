@@ -7,4 +7,4 @@
 * git log
 * git log --oneline
 * git log --oneline --graph
-*
+* git pull
