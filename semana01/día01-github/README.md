@@ -9,3 +9,4 @@
 * git log --oneline --graph
 * git pull
 * git checkout -b marcel
+* git merge copia
