@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Formularios + Inputs + Validaciones</h1>
+        <hr>
+        <form>
+            <h2>Inputs</h2>
+            <label for="nombre">
+                Input tipo texto : 
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese un nombre">
+            </label>
+            <label for="desactivado">
+                Input (Desactivado) : 
+                <input type="text" name="desactivado" id="desactivado" placeholder="Ingrese un nombre" disabled>
+            </label>
+            <label for="lectura">
+                Input (Solo lectura) : 
+                <input type="text" name="lectura" id="lectura" placeholder="Solo lectura" readonly value="Marcel Artica">
+            </label>
+            <label for="edad">
+                Input tipo nombre : 
+                <input type="number" name="edad" id="edad" placeholder="Edad Ej. 19" >
+            </label>
+            <label for="correo">
+                Input de Correo
+                <input type="email" name="correo" id="correo" placeholder="correo Ej. marcel@gmail.com">
+            </label>
+            <label for="range">
+                Input de tipo range (Edad)
+                <input type="range" name="range" id="range">
+            </label>
+            <label for="telefono">
+                Input tipo tel
+                <input type="tel" name="telefono" id="telefono" placeholder="(51) 98415315">
+            </label>
+            <label for="url">
+                Input tipo url
+                <input type="url" name="url" id="url" placeholder="URL">
+            </label>
+            <label for="password">
+                Input tipo password
+                <input type="password" name="password" id="password" placeholder="Password">
+            </label>
+            <label for="color">
+                Input de color
+                <input type="color" name="color" id="color" >
+            </label>
+            <label for="search">
+                Input de tipo search
+                <input type="search" name="search" id="search">
+            </label>
+            <label for="anyFile">
+                Input tipo file (cualquier archivo)
+                <input type="file" name="anyFile" id="anyFile">
+            </label>
+            <label for="imagens">
+                Input tipo file (solo imágenes)
+                <input type="file" name="imagens" id="imagens" accept="image/*">
+            </label>
+            <label for="sima">
+                Input tipo file (solo imágenes jpg jpge)
+                <input type="file" name="sima" id="sima" accept=".jpe, .jpeg">
+            </label>
+            <label for="pdf">
+                Input tipo file (solo pdfs)
+                <input type="file" name="pdf" id="pdf" accept=".pdf" multiple>
+            </label>
+            <label for="dateTime">
+                Input tipo datetime-local (Fechas y hora)
+                <input type="datetime-local" name="dateTime" id="dateTime">
+            </label>
+            </label>
+            <label for="date">
+                Input tipo date (fecha)
+                <input type="date" name="date" id="date">
+            </label>
+            <label for="week">
+                Input tipo date (semana)
+                <input type="week" name="week" id="week">
+            </label>
+            <input type="submit">
+            <input type="reset" >
+        </form>
+        <hr>
+
+        <form >
+            <h2>Textareas</h2>
+            <label for="textarea">
+                <textarea name="textarea" id="textarea" rows="5" placeholder="Escribe una despcripción sobre ti..."></textarea>
+            </label>
+        </form>
+
+        <form >
+            <h2>Selects</h2>
+            <label for="select">
+                <select name="select" id="select">
+                    <option value="" disabled selected>Selecciona comida favorita...</option>
+                    <option value="fr">Francesa</option>
+                    <option value="it">Italiana</option>
+                    <option value="pe">Peruana</option>
+                    <option value="br">Brasileña</option>
+                </select>
+            </label>
+            <input type="submit" value="">
+        </form>
+        <form >
+            <h2>Checkboxes</h2>
+            <label for="span">
+                <input type="checkbox" name="span" id="span" value="esp">
+                Español
+            </label>
+            <label for="ital">
+                <input type="checkbox" name="ital" id="ital" value="ita" checked>
+                Italiano
+            </label>
+            <label for="eng">
+                <input type="checkbox" name="eng" id="eng" value="eng">
+                Inglés
+            </label>
+            <br>
+            <input type="submit" >
+        </form>
+        <form >
+            <h2>Radio Buttons</h2>
+            <blockquote><b>NOTA:</b> Para agrupar los radio buttons se les identifica con un mismo "name"</blockquote>
+            <label for="per">
+                <input type="radio" name="lan1" id="per" checked>
+                Perú
+            </label>
+            <label for="bra">
+                <input type="radio" name="lan1" id="bra">
+                Brasil
+            </label>
+            <label for="arg">
+                <input type="radio" name="lan1" id="arg">
+                Argentina
+            </label>
+            <br>
+            <input type="submit" >
+        </form>
+    </main>
+</body>
+</html>
