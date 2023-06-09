@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Validaciones</h1>
+        <hr>
+        <form >
+            <label for="nombre">
+                Nombre
+                <input type="text" name="nombre" id="nombre" maxlength="50" minlength="10" required>
+            </label>
+
+            <label for="correo">
+                Email
+                <input type="email" name="correo" id="correo" required>
+            </label>
+            
+            <label for="edad">
+                Edad
+                <input type="number" name="edad" id="edad" required min="1" max="21">
+            </label>
+
+            <label for="telef">
+                Celular
+                <input type="tel" name="telef" id="telef" required pattern="\+[0-9]{2} [0-9]{9}" placeholder="+51 986754348">
+            </label>
+
+            <label for="comidas">
+                Comidas
+                <select name="comidas" id="comidas" required>
+                    <option value="fr" selected disabled> Seleccione tu comida favorita..</option>
+                    <option value="fr"> Francesa</option>
+                    <option value="en"> Inglesa</option>
+                    <option value="pe"> Peruana</option>
+                    <option value="mx"> Mexicana</option>
+                </select>
+            </label>
+
+            <input type="submit" value="Guardar">
+
+        </form>
+    </main>
+</body>
+</html>
