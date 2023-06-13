@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+main{
+    width: 560px;
+    display: flex;
+}
+
+.photo{
+    width: 300px;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 1px 1px 3px #ccc;
+}
+
+.content{
+    background-color: hsl(0, 0%, 100%);
+    width: 260px;
+    border-radius: 0px 10px 10px 0px;
+    padding: 28px;
+    box-shadow: 1px 1px 3px #ccc;
+}
+
+.content h3{
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+.content h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    line-height: 35px;
+}
+
+.content p{
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    line-height: 20px;
+}
+
+div{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.content s{
+    color: hsl(228, 12%, 48%);
+
+}
+
+.content span{
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 14px;
+    font-weight: 700;
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}

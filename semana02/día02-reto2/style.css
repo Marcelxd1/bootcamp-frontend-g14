@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:  hsl(235, 18%, 26%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px #181818;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+    font-size: 50px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    line-height: 1;
+}
+
+label{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input{
+    border-radius: 8px;
+    margin: 0px;
+    border-color: hsl(240, 1%, 71%);
+}
+
+input::placeholder{
+    color: hsl(240, 1%, 71%);
+}
+
+form{
+    width: 100%;
+}
+
+
+
+.content1{
+    width: 55%;
+    padding: 45px;
+    height: 100%;
+}
+
+.content2{
+    display: flex;
+    justify-content: center;
+}
+
+.list{
+    display: flex;
+    gap: 15px;
+    line-height: 5px;
+    line-height: 1;
+}
+
+.texto{
+    padding: 15px;
+    width: 90%;
+}
+
+.boton{
+    background-color:  hsl(234, 29%, 20%);
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 25px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color:   hsl(4, 100%, 67%);
+    box-shadow: 1px 1px 3px hsl(4, 100%, 67%);
+    border: none;
+}
+
+.image{
+    padding: 20px;
+}
+
+.success{
+    padding: 30px;
+    width: 360px;
+}
+
+.imasSe{
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

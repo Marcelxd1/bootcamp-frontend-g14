@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            max-width: 510px !important;
+        }
+        div{
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <form >
+            <img src="https://placehold.co/80.png?text={vv}">
+            <hgroup>
+                <h1>Crea una cuenta</h1>
+                <h2>Ingrese la siguiente información para registrarte.</h2>
+            </hgroup>
+
+        <div>
+            <label for="name">
+                <input type="text" name="name" id="name" placeholder="Nombres" required>
+            </label>
+
+            <label for="lastname">
+                <input type="text" name="lastname" id="lastname" placeholder="Apellidos" required>
+            </label>
+        </div>
+        <label for="correo">
+            <input type="email" name="correo" id="correo" placeholder="Email: Ej. user@gmail.com" required>
+        </label>
+        <label for="tele">
+            <input type="tel" name="tele" id="tele" placeholder="Teléfono" required>
+        </label>
+
+        <label for="pass">
+            <input type="password" name="pass" id="pass" placeholder="Password	"required>
+        </label>
+
+        <label for="Cpass">
+            <input type="password" name="Cpass" id="Cpass" placeholder="Confirmar Password" required>
+        </label>
+            
+        <input type="submit" value="Registrarse">
+
+        <p>¿Ya tienes una cuenta? <a href="login.html"> <u> Accede desde aquí</u></a></p>
+            
+        </form>
+    </main>
+</body>
+</html>

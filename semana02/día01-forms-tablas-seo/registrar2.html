@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            max-width: 510px !important;
+        }
+        div{
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <form >
+            <img src="https://placehold.co/80.png?text={vv}">
+            <hgroup>
+                <h1>Crea una cuenta</h1>
+                <h2>Ingrese la siguiente información para registrarte.</h2>
+            </hgroup>
+
+        <div>
+            <label for="name"">
+                Nombres
+                <input type="text" name="name" id="name" placeholder="Marcel" required>
+            </label>
+
+            <label for="lastname" >
+                Apellidos
+                <input type="text" name="lastname" id="lastname" placeholder="Artica" required>
+            </label>
+        </div>
+
+        <label for="edad">
+            Edad
+            <input type="number" name="edad" id="edad"
+             placeholder="Ej. 19" required>
+        </label>
+
+        <label for="fecha">
+            Fecha de nacimiento
+            <input type="date" name="fecha" id="fecha" placeholder="mm/dd/yyyy" required>
+        </label>
+
+        <label for="genero">
+            Género
+            <select name="genero" id="genero" required>
+                <option value="aux" selected disabled>Selecciona tu género</option>
+                <option value="M"> Masculino</option>
+                <option value="F"> Femenino</option>
+            </select>
+        </label>
+
+        <label for="correo">
+            Email
+            <input type="email" name="correo" id="correo" placeholder="Email: Ej. user@gmail.com" required>
+        </label>
+
+        <label for="direc">
+            Dirección
+            <input type="text" name="direc" id="direc" required placeholder="Dirección">
+        </label>
+
+        <label for="direc">
+            <input type="text" name="direc2" id="direc2" required placeholder="Dirección línea 2">
+        </label>
+
+        <label for="tele">
+            Teléfono
+            <input type="tel" name="tele" id="tele" placeholder="Número de teléfono" required>
+        </label>
+
+        <label for="cod">
+            Código postal
+            <input type="text" name="cod" id="cod" placeholder="Ej. 14001" required>
+        </label>
+
+        <label for="ciud">
+            Cuidad
+            <input type="text" name="ciud" id="ciud" placeholder="Ej. Chiclayo" required>
+        </label>
+        
+        <label for="pdf">
+            Subir firma
+            <input type="file" name="pdf" id="pdf" required>
+        </label>
+
+        <label for="chec">
+            <input type="checkbox" name="chec" id="chec">
+            Acepto los términos, condiciones y políticas.
+        </label>
+
+        <hr>
+            
+        <input type="submit" value="Registrarse">
+
+        <p>¿Ya tienes una cuenta? <a href="login.html"> <u> Accede desde aquí</u></a></p>
+            
+        </form>
+    </main>
+</body>
+</html>
