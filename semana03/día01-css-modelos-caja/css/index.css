@@ -26,6 +26,15 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: var(--font-size);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body{
     background-color: var(--primary-dar-blue-intro);
     color: var(--neutral-white);
@@ -36,10 +45,16 @@ a{
     text-decoration: none;
 }
 
+.wrapper{
+    width: min(100% - 3rem, 1440px);
+    margin: 0 auto;
+}
+
 .header{
+    font-family: var(--font-primary);
     border: 1px solid red;
-    padding: 10px;
-    margin: 10px;
+    margin: 0 auto;
+    margin-top: 2rem;
 
     display: flex;
     justify-content:space-between;
@@ -48,9 +63,59 @@ a{
 .header__nav{
     border: 1px solid rgb(0, 238, 255);
     list-style: none;
-    width: 200px;
     margin: 10px;
     padding: 10px;
+
     display: flex;
     gap: 2rem;
+}
+
+.hero{
+    border: 1px solid rgb(89, 255, 0);
+
+    margin: 0 auto;
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+
+    background: var(--primary-dar-blue-intro) url(../images/bg-curvy-desktop.svg) no-repeat bottom;
+    background-size: contain;
+    padding-top: 3rem;
+}
+
+.hero__title{
+    width: min(100% - 3rem, 720px);
+
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+.hero__text{
+    width: min(100% - 3rem, 720px);
+    
+    font-family: var(--font-secondary);
+    padding: 0 7rem;
+    line-height: 1.5;
+}
+
+.hero__button{
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight-bold);
+    border: none;
+    border-radius: 7rem;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(
+        90deg,
+        var(--accent-cyan-gradient-1) 0%,
+        var(--accent-Blue-gradient-2) 35%
+         );
+    line-height: 1.5;
+    color: var(--neutral-white);
+    min-width: 220px;
 }
