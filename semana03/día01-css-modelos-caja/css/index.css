@@ -52,7 +52,7 @@ a{
 
 .header{
     font-family: var(--font-primary);
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0 auto;
     margin-top: 2rem;
 
@@ -61,7 +61,7 @@ a{
 }
 
 .header__nav{
-    border: 1px solid rgb(0, 238, 255);
+    /* border: 1px solid rgb(0, 238, 255); */
     list-style: none;
     margin: 10px;
     padding: 10px;
@@ -71,10 +71,9 @@ a{
 }
 
 .hero{
-    border: 1px solid rgb(89, 255, 0);
+    /* border: 1px solid rgb(89, 255, 0); */
 
     margin: 0 auto;
-    margin-top: 5rem;
 
     display: flex;
     flex-direction: column;
@@ -83,8 +82,9 @@ a{
     gap: 2rem;
 
     background: var(--primary-dar-blue-intro) url(../images/bg-curvy-desktop.svg) no-repeat bottom;
-    background-size: contain;
+    background-size: 100%;
     padding-top: 3rem;
+    padding-bottom: 12rem;
 }
 
 .hero__title{
@@ -118,4 +118,212 @@ a{
     line-height: 1.5;
     color: var(--neutral-white);
     min-width: 220px;
+}
+
+.feature{
+    background-color: var(--primary-dar-blue-main);
+    display: grid;
+    grid-template-columns: 340px 340px;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.features{
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.features__title{
+    font-family: var(--font-primary);
+
+}
+
+.feature__text{
+    font-family: var(--font-secondary);
+
+}
+
+.collaboration{
+    background-color: var(--primary-dar-blue-main);
+    display: flex;
+    padding: 0 4rem;
+    padding-top: 8rem;
+    align-items: center;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 33rem;
+}
+
+.info__text{
+    font-family: var(--font-secondary);
+}
+
+.info__title{
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.info__link{
+    color: var(--accent-cyan-gradient-1);
+    border-bottom: 1px solid var(--accent-cyan-gradient-1) ;
+    margin-right: auto;
+    padding-bottom: 0.2rem;
+    display: flex;
+    gap: 0.3rem;
+}
+
+.testimonials{
+    background-color: var(--primary-dar-blue-main);
+    display: flex;
+    padding: 0 4rem;
+    padding-top: 8rem;
+    align-items: center;
+    gap: 2.6rem;
+    justify-content: center;
+}
+
+.testimonial{
+    background-color: var(--primary-dar-blue-testimonials);
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+
+.testimonial__text{
+    width: 21rem;
+    font-family: var(--font-secondary);
+}
+
+.testimonial__group{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+
+.testimonial__group img{
+    border-radius: 50%;
+}
+
+.testimonial__group h5{
+    font-weight: var(--font-weight-regular);
+}
+
+.access{
+    background-color: var(--primary-dar-blue-main);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 250px;
+}
+
+.access__container {
+    background-color: var(--primary-dar-blue-intro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    bottom: -30%;
+    padding: 1rem;
+}
+
+.access__container h2{
+    font-family: var(--font-primary);
+    padding: 1rem;
+}
+
+.access__container p{
+    font-family: var(--font-secondary);
+    font-size: 11px;
+    padding: 0 4rem;
+    padding-bottom: 2rem;
+}
+
+.access__form{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.access__text {
+    border-radius: 50px;
+    padding: 0.7rem;
+    width: 50%;
+    border: none;
+}
+
+.access__button{
+    background: linear-gradient(
+        90deg,
+        var(--accent-cyan-gradient-1) 0%,
+        var(--accent-Blue-gradient-2) 35%
+    );
+    color: var(--neutral-white);
+    font-weight: var(--font-weight-bold);
+    padding: 0.7rem;
+    border-radius: 50px;
+    width: auto;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-dar-blue-footer);
+    padding: 8rem 4rem;
+    gap: 2rem;
+}
+
+.footer__info{
+    display: flex;
+    gap: 3rem;
+}
+
+
+.footer__div1{
+    width: 25%;
+}
+
+.footer__div2{
+    width: 20%;
+}
+
+.footer__div3{
+    width: 15%;
+}
+
+.footer__div4{
+    width: 15%;
+}
+.footer__div5{
+    width: 20%;
+}
+
+.footer__text{
+    display: flex;
+    gap: 1.5rem;
+    align-items: start;
+    padding: .5rem 0;
 }
