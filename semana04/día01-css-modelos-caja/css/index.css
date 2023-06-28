@@ -60,6 +60,27 @@ a{
     justify-content:space-between;
 }
 
+.navigation{
+    display: none;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+#menu-toggle:checked + .navigation{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
+    background-color: var(--primary-dar-blue-footer);
+}
+
+#menu-toggle:checked + .navigation .header__nav{
+    flex-direction: column;
+}
+
 .header__nav{
     /* border: 1px solid rgb(0, 238, 255); */
     list-style: none;
