@@ -1,0 +1,63 @@
+.access{
+    background-color: var(--primary-desaturated-blue);
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .access {
+      flex-direction: row;
+    }
+  }
+  
+
+.access__info{
+    font-family: var(--font-secondary);
+    color: var(--neutral-white);
+    padding: 5rem;
+    width: 41rem;
+}
+
+.access h2{
+    font-size: 2rem;
+}
+
+
+.access input[type=email] {
+    border-radius: .5rem;
+    border: none;
+    padding: 1rem 2rem;
+    min-width: 30rem;
+}
+ 
+
+.access input[type=submit] {
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem .5rem;
+    line-height: 1.5;
+    min-width: 120px;
+    color: var(--neutral-white);
+    background-color: var(--accent-bright-blue);
+    cursor: pointer;
+    width: fit-content;
+}
+
+.access form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: .5rem 5rem;
+}
+
+@media (min-width: 768px) {
+    .access form{
+        padding: 5rem;
+    }
+    .access input[type=submit] {
+        width: 200px;
+    }
+    .access input[type=email] {
+        width: 50px;
+    }
+}
