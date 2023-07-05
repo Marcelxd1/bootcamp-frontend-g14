@@ -2,6 +2,7 @@
     background-color: $card-bg;
     border: 1px solid $card-border-color;
     border-radius: $card-border-radius;
+    @include custom-border(6px,green,false);
 
     &--header{
         padding: 1rem 1.5rem;
