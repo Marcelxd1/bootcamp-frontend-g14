@@ -131,12 +131,13 @@ a {
 
 .skills {
   display: flex;
+  align-items: center;
 }
 .skills__info {
   display: flex;
   flex-direction: column;
   padding: 2.8rem;
-  width: 60%;
+  width: 55%;
 }
 .skills__tag {
   font-size: 1.5rem;
@@ -160,18 +161,68 @@ a {
   color: #D9ED92;
 }
 .skills__list {
-  width: 40%;
+  width: 45%;
   display: grid;
   grid-template-columns: repeat(6, 5rem);
   grid-template-rows: repeat(4, 5rem);
+  grid-template-areas: ". . b1 . . ." ". . b2 b3 . ." ". b4 b5 b6 b7 ." "b8 b9 b10 b11 b12 b13";
+  gap: 0.5rem;
+  position: relative;
 }
 .skills__box {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 5rem;
+  width: 5rem;
   border-radius: 0.5rem;
   background-color: #0A2B45;
+}
+.skills__box:nth-child(1) {
+  grid-area: b1;
+  position: absolute;
+  top: 0;
+  left: 2.5rem;
+}
+.skills__box svg {
+  width: 50px;
+  height: 50px;
+}
+.skills__box:nth-child(2) {
+  grid-area: b2;
+}
+.skills__box:nth-child(3) {
+  grid-area: b3;
+}
+.skills__box:nth-child(4) {
+  grid-area: b4;
+}
+.skills__box:nth-child(5) {
+  grid-area: b5;
+}
+.skills__box:nth-child(6) {
+  grid-area: b6;
+}
+.skills__box:nth-child(7) {
+  grid-area: b7;
+}
+.skills__box:nth-child(8) {
+  grid-area: b8;
+}
+.skills__box:nth-child(9) {
+  grid-area: b9;
+}
+.skills__box:nth-child(10) {
+  grid-area: b10;
+}
+.skills__box:nth-child(11) {
+  grid-area: b11;
+}
+.skills__box:nth-child(12) {
+  grid-area: b12;
+}
+.skills__box:nth-child(13) {
+  grid-area: b13;
 }
 
 /*# sourceMappingURL=styles.css.map */
