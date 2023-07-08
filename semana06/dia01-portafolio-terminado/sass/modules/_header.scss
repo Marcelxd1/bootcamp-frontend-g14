@@ -1,0 +1,65 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        color: $primary-dark-gold;
+        font-size: 2rem;
+        font-weight: $font-weight-bold;
+    }
+
+    &__menu ul{
+        list-style: none;
+
+        display: flex;
+        gap: 1.5rem;
+
+        padding: 10px;
+        margin: 10px;
+
+    }
+
+    &__menu a{
+        font-size: 1.125rem;
+        font-weight: $font-weight-semibold;
+        text-transform: capitalize;
+
+        transition: color ease .6s;
+    }
+
+    &__menu--active,
+    &__menu a:hover{
+        color: $primary-dark-gold;
+        cursor: pointer;
+        border-bottom: 3px solid $primary-dark-gold;
+    }
+
+
+    &__actions{
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    &__action{
+        width: 2.75rem;
+        height: 2.75rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__action:hover{
+        border-radius: 100%;
+        background-color: $primary-dark-blue1;
+        cursor: pointer;
+    }
+
+    &__action--dark-selected{
+        border: none;
+        border-radius: 100%;
+        background-color: $primary-dark-blue3;
+    }
+
+}

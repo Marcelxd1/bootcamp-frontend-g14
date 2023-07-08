@@ -1,0 +1,35 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 4rem;
+
+    &__gretting{
+        font-size: 2rem;
+        font-family: $font-weight-bold;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    &__gretting span{
+        color: $primary-dark-gold;
+        text-decoration: underline;
+    }
+
+    &__title{
+        font-size: 3rem;
+        font-weight: $font-weight-bold;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    &__description{
+        font-size: 1.5rem;
+        font-weight: $font-weight-regular;
+    }
+
+    &__photo{
+        border-radius: 100%;
+    }
+}
