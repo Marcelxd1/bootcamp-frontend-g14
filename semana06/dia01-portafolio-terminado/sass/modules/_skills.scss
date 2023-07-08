@@ -1,0 +1,29 @@
+.skills{
+    display: flex;
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+
+        padding: 2.8rem;
+
+        
+        width: 60%;
+    }
+
+    &__tag{
+        font-size: 1.5rem;
+        color: $primary-dark-gold;
+        font-weight: $font-weight-semibold;
+    }
+
+    &__title{
+        font-size: 3rem;
+        line-height: normal;
+        font-weight: $font-weight-bold;
+    }
+
+    &__list{
+        width: 40%;
+    }
+}
