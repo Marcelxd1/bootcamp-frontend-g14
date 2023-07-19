@@ -274,31 +274,43 @@ a {
 .projects__img {
   width: 100%;
   height: 100%;
+  border-radius: 5.27px;
 }
 .projects__cover {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: #D9ED92;
-  opacity: 0;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
+  padding: 0 1rem;
+  color: black;
   transition: all ease 0.3s;
 }
-.projects__cover:hover {
-  opacity: 1;
+.projects__cover .projects__item:hover {
+  display: block;
 }
 .projects__cover h3 {
   font-size: 3rem;
-  color: black;
+  height: 40%;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
 }
 .projects__cover p {
-  color: black;
+  height: 30%;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.projects__links {
+  height: 30%;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

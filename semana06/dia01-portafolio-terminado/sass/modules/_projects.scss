@@ -60,39 +60,51 @@
     &__img{
         width: 100%;
         height: 100%;
-
+        border-radius: 5.27px;
     }
 
     &__cover{
+        display: none;
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         background-color: $primary-dark-gold;
-        opacity: 0;
       
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
+        padding: 0 1rem;
+        color: black;
       
         transition: all ease .3s;
 
     }
-
-    &__cover:hover{
-        opacity: 1;
+    &__cover
+    &__item:hover{
+        display: block;
+        
     }
 
     &__cover h3{
         font-size: 3rem;
-        color: black;
+        height: 40%;
+        display: inherit;
+        justify-content: center;
+        align-items: center;
         
     }
     &__cover p{
-        color: black;
-        
+        height: 30%;
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__links{
+        height: 30%;
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
     }
 }
