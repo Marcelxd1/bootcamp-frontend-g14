@@ -392,7 +392,7 @@ a{
 
 @media (min-width: 768px) {
     .footer__info {
-        grid-template-columns: 2fr 3fr 0.5fr 0.5fr 1fr;
+        grid-template-columns: 2fr 4fr 0.5fr 0.5fr 1fr;
     }
     
 }
