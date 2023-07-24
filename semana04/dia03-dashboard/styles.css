@@ -1,8 +1,8 @@
 :root {
-  --bg-1: #A0C49D;
-  --bg-2: #C4D7B2;
-  --bg-3: #E1ECC8;
-  --bg-4: #F7FFE5;
+  --bg-4: #B9EDDD;
+  --bg-3: #87CBB9;
+  --bg-2: #569DAA;
+  --bg-1: #577D86;
 }
 
 /* RESET */
@@ -21,8 +21,8 @@ body {
   grid-template-rows: 60px 1fr;
 
   grid-template-areas:
-    "side header side2"
-    "side main side2";
+    "side header"
+    "side main";
   
   transition: 300ms;
 }
@@ -38,41 +38,47 @@ body {
   padding: 24px;
 }
 
-.header__button-menu,
-.header__button-settings {
-  cursor: pointer;
-}
 
 .header svg {
   fill: #FFF;
+  cursor: pointer;
 }
 
 .sidebar {
   background-color: var(--bg-2);
 
   grid-area: side;
-
   
 }
 
 body:has(.sidebar--open) {
-  --sidebarWidth: 100px;
+  --sidebarWidth: 80px;
 }
+
+
 
 .main {
   background-color: var(--bg-3);
 
   grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr var(--sideconfWidth, 200px);
+  grid-template-areas: 
+  "cards sid";
+}
 
+.cards{
   display: grid;
 
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 
+  grid-area: cards;
+
   grid-template-areas: 
-    "c1 c2 c3"
-    "c4 c4 c5"
-    "c4 c4 c6";
+    "c1 c2 c3 "
+    "c4 c4 c5 "
+    "c4 c4 c6 ";
   
   gap: 20px;
   padding: 24px;
@@ -107,8 +113,18 @@ body:has(.sidebar--open) {
   grid-area: c6;
 }
 
+.sideconfig{
+  background-color: var(--bg-4);
+  
+  grid-area: sid;
+}
+
+body:has(.sideconfig--open) {
+  --sideconfWidth: 80px;
+}
+
 @media (max-width: 768px) {
-  .main {
+  .cards {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 200px);
     grid-template-areas: initial;
