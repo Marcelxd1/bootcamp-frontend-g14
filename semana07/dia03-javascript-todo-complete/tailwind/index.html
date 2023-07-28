@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lsita de Tareas - P2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main class="w-2/3 border rounded-lg shadow mx-auto mt-10">
+
+        <div class="flex flex-col px-4 py-6">           
+
+            <h1 class="text-xl font-bold text-gray-500 text-center">
+                Listado de Tareas
+            </h1>
+
+            <input type="text" class="task__input bg-white border border-gray-400 text-gray-500 text-sm rounded-lg p-2.5 w-full hover:border-gray-500" placeholder="Ingrese una tarea">
+            
+            <div class="flex justify-end py-3">
+                <button class=" py-3 bg-blue-800 font-medium text-sm p-1 px-3 rounded-lg hover:bg-blue-400 text-white task__btnClear">Limpiar tareas completadas</button>
+            </div>
+            
+            <ul class="list-group task__list">
+                <!-- <li>
+                    <input type="checkbox">
+                    <span>Estudiar Javascript</span>
+                    <button>Borrar</button>
+                </li> -->
+            </ul>
+
+        </div>
+
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
