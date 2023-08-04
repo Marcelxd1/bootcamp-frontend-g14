@@ -15,11 +15,11 @@
         <input type="text" class="app__search" placeholder="Buscar por nombre de país o ...">
 
         <select name="region" class="app__filter">
-            <option value="" >Filtar por region</option>
+            <option value="" disabled selected>Filtar por region</option>
             <option value="africa" >África</option>
-            <option value="américa" >América</option>
+            <option value="americas" >América</option>
             <option value="asia" >Asia</option>
-            <option value="europa" >Europa</option>
+            <option value="europe" >Europe</option>
             <option value="oceania" >Ocenía</option>
         </select>
     </section>
@@ -28,9 +28,19 @@
 
     </main>
 
+    <div class="app__scrolltop">
+        <a href="#top">⬆️</a>
+    </div>
+
     <footer class="app__footer wrapper">
         Hecho por Marcel Artica - Julio 2023
     </footer>
+
+    <dialog class="country__dialog">
+        <div class="dialog__body"></div>
+        <button class="dialog__close">Close</button>
+    </dialog>
+
     <script src="./modules/main.js" type="module"></script>
 </body>
 </html>

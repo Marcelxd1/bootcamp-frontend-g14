@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles.css">
 
 </head>
-<body>
-    
+<body class="bg-teal-950 flex justify-center h-screen	items-center	">
+    <main class="quiz__main w-3/5 border rounded-lg shadow mx-auto bg-white">
+        
+        <h1 class="text-2xl font-bold text-gray-900 text-center mb-4 mt-2">Trivia de Javascript</h1>
+        
+        <div class="quiz__questions"></div>
+        
+        <div class="quiz__answers p-6"></div>
 
-    <script src="./main.js"></script>
+        <div class="quiz__number "></div>
+
+        <div class="quiz__btn  flex justify-end p-6"></div>
+        
+
+    </main>    
+
+    <script  src="./main.js" type="module">
+        function algo(){
+            console.log("eeeeeee")
+        }
+    </script>
 </body>
 </html>
