@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Peliculas con json-server</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        .fs-small{
+            font-size: .8rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li>
+                <strong>CRUD de Peliculas con json-server</strong>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="grid">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="movies__list">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <form id="movies__form">
+                    <h2>New Movie</h2>
+
+                    <input type="hidden" name="id" />
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="text" name="image" placeholder="Url image" >
+                    <input type="date" name="release" placeholder="Release" required>
+                    <select name="genre" id="">
+                        <option value="">Select a genre...</option>
+                        <option value="1">Comedy</option>
+                        <option value="2">Action</option>
+                        <option value="3">Animation</option>
+                        <option value="4">Adventura</option>
+                    </select>
+
+                    <textarea name="resumen" id="" cols="30" rows="3" placeholder="Resumen"></textarea>
+                    <input type="submit" value="Save">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid">
+        MArcel Artica - Julio 2023
+    </footer>
+
+    <script src="./main.js" type="module"></script>
+</body>
+</html>
