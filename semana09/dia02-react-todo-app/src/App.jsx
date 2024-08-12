@@ -1,8 +1,7 @@
-import { useState } from 'react'
-import './App.css'
-import {TrashIcon} from './components/Icons'
+import { useState } from "react"
 
 function App() {
+
   const DEFAULT_TODOS = [
     {
       "id": '1',
@@ -142,7 +141,7 @@ function App() {
                       {todo.title}
                     </div>
                     <button
-                      className="font-bold bg-red-200 rounded-lg px-2 py-2 text-white"
+                      className="font-bold bg-red-300 rounded-lg px-2 py-2 text-white"
                       data-id={todo.id}
                       onClick={handleRemoveTodo}
                     >

@@ -1,15 +1,21 @@
-import './App.css'
 import Counter from './Counter'
+import './App.css'
 
 function App() {
   
 
   return (
     <>
-      <Counter initial={5}></Counter>
-      <Counter></Counter>
+      <h1>Counter</h1>
+
+      <Counter iniciador={5} />
+      <Counter />
     </>
   )
 }
+
+// const App = () => {
+//   return <h1>Hola React!</h1>
+// }
 
 export default App
